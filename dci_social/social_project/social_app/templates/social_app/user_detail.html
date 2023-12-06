@@ -14,5 +14,6 @@
     <p><a href="{% url 'user_list' %}">Go back to user list</a></p>
     <p><a href="{% url 'create_post' username=user.username %}">Create post</a></p>
     <p><a href="{% url 'update_user' username=user.username %}">update user profile</a></p>
+    <p><a href="{% url 'delete_user' username=user.username %}">Delete user profile</a></p>
     {% endblock %}
 
