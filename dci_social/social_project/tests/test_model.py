@@ -74,4 +74,5 @@ class PostModelTest(TestCase):
         with self.assertRaises(ValidationError):
             Post.objects.create(user=self.user, post='This post contains a bad word: dog', visibility=Post.PUBLIC)
 
-        
+
+     

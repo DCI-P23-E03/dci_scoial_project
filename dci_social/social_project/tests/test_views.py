@@ -94,5 +94,6 @@ class PostViewsTest(TestCase):
             Post.objects.get(id=post.id)
     
     
+    
         
     
