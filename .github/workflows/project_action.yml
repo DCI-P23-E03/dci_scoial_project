@@ -24,4 +24,4 @@ jobs:
               pip install -r dci_social/requirements.txt
       
           - name: Run tests
-            run: python dci_social/social_project/manage.py test
+            run: python dci_social/social_project/manage.py test tests
