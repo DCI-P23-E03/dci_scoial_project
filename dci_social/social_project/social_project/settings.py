@@ -82,31 +82,25 @@ WSGI_APPLICATION = 'social_project.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     'default': {
-
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'social_dci_db',
-
+        'NAME': 'social_db',
         'USER': 'postgres',
-
         'PASSWORD': 'postgres',
-
         'HOST': 'localhost',
-
         'PORT': '5432',
-
     }
 }
-
 if os.environ.get('GITHUB_WORKFLOW'):
     DATABASES = {
         'default': {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'social_dci_db',
+        'NAME': 'social_db',
 
         'USER': 'postgres',
 
@@ -116,6 +110,7 @@ if os.environ.get('GITHUB_WORKFLOW'):
 
         'PORT': '5432',}
     }
+
 
 
 # Password validation
