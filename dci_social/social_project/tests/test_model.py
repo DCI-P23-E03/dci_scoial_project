@@ -12,8 +12,8 @@ class UserModelTest(TestCase):
             'bio': 'This is a test bio.',
             'age': 25
         }
-    def tearDown(self) :
-        User.objects.all().delete()
+    # def tearDown(self) :
+    #     User.objects.all().delete()
         
     
     
@@ -54,9 +54,9 @@ class PostModelTest(TestCase):
             'visibility': Post.PUBLIC
         }
         
-    def tearDown(self):
-        User.objects.all().delete()
-        Post.objects.all().delete()
+    # def tearDown(self):
+    #     User.objects.all().delete()
+    #     Post.objects.all().delete()
         
     def test_post_creation(self):
         post = Post.objects.create(**self.post_data)
